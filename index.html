@@ -19,33 +19,48 @@
     }
     .animaldivs{
       float: left;
+      position:relative;
+    }
+    h4{
+      font-style:bold;
+      font-size:15;
+    }
+    .form12{
+      float:right;
+    }
+    #gifs-appear-here{
+      width: 1200px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+    
 
     <!-- Rendered Buttons will get Dumped Here  -->
     <div id="buttons-view"></div>
 
+    <div class="container">
+    <div class="form12">
     <form id="movie-form">
-      <label for="movie-input">Add anything you like</label>
+      <label for="movie-input"><h4>Add anything you like</h4></label>
       <br>
       <input type="text" id="movie-input">
       <br>
 
       <!-- Button triggers new movie to be added -->
-      <input id="add-movie" type="submit" value="Submit">
+      <input id="add-movie" type="submit" class="button btn-info btn-lg invis-button" value="Submit">
     </form>
 
+  </div>
+</div>
     <!-- Movies will Get Dumped Here -->
     <div id="gifs-appear-here"></div>
 
     <script src="app2.js"></script>
     
-  </div>
+  
 </body>
 
 </html>
